@@ -51,30 +51,12 @@ async def on_message(message):
     duedate = "Due: <t:1691290800> <t:1691290800:R>"
     if message.content.startswith('$due'):
         await message.channel.send(duedate)
-    if message.content.startswith('$sorryj'):
-        await message.channel.send("I am so sorry for your troubles Julissa. The bot is now back up.")
     if message.content.startswith('$spotify'):
         await message.channel.send(spotify)
     if message.content.startswith('$sorter'):
         await message.channel.send("https://witchessongcontest.tumblr.com/")
     if message.content.startswith('$youtube'):
         await message.channel.send(youtube)
-    if message.content.startswith('$corey'):
-        await message.channel.send(":angry:")
-    if message.content.startswith('$josh'):
-        await message.channel.send("Ugh.")
-    if message.content.startswith('$kesha'):
-        await message.channel.send("Has Kesha Won WSC Yet?")
-        time.sleep(1)
-        await message.channel.send(file=discord.File('paula.jpg'))
-    if message.content.startswith('$davidsdog'):
-        await message.channel.send(file=discord.File('davidsdog.png'))
-    if message.content.startswith('$fruitripeness'):
-        await message.channel.send(file=discord.File('fruit.png'))
-    if message.content.startswith('$liam'):
-        await message.channel.send(file=discord.File('liam.png'))
-    if message.content.startswith('$julissa'):
-        await message.channel.send(":heart: :heart: :heart: :heart: :heart::heart:\n:heart:       Julissa         :heart:\n:heart: :heart: :heart: :heart: :heart::heart:")
     if message.content.startswith('$artist'):
         wanted_artist = msg.split("$artist ", 1)[1]
         finished = ">>> " 
@@ -983,7 +965,6 @@ async def on_message(message):
       
 keep_alive()
 token = os.environ.get("DISCORD_BOT_SECRET")
-client.run("MTEzMDczMDQ3NDAzODM3NDQxMQ.GOJooy.KbkKWe2uLwnW8drO9RGjRHkf4XcCtwgGKJjgMQ")
 
 from flask import Flask
 app = Flask(__name__)
